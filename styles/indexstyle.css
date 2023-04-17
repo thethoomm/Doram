@@ -1,0 +1,216 @@
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    background-color: var(--Preto);
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(180deg, var(--Preto) -11.68%, rgba(13, 13, 13, 0) 182.71%);
+    opacity: 0.9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding: 0 7%;
+}
+
+.searchbar {
+    width: 40%;
+    height: 3.7rem;
+    border-radius: 3.1rem;
+    padding: 1rem 3.8rem;
+    background-color: rgba(101, 101, 101, 0.35);
+    color: var(--Branco);
+    outline: none;
+    border: none;
+}
+
+.searchbar::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
+#login-button {
+    color: var(--Branco);
+    font-size: 1.3rem;
+}
+
+.header {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50%;
+
+    background-image: url(../assets/Images/droama10.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -10rem;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+    .recommendation-area {
+        width: 100%;
+        height: 100%;
+        color: var(--Branco);
+    }
+        .videos-grid {
+            width: 100%;
+            height: 100%;
+
+        }
+            .lines {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                padding: 2rem;
+            }
+                .line {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 1rem;
+                }
+                    .card {
+                        width: 25%;
+                        height: 18rem;
+                        aspect-ratio: 16/9;
+                        border-radius: 2rem;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        align-items: center;
+                        text-align: center;
+                        padding: 1rem;
+
+                        pointer-events: none;
+                        overflow: hidden;
+                        
+                    }
+                    .card:active {
+                        transition: all 300ms;
+                        filter:brightness(0.8);
+                        color: rgb(255, 255, 255);
+                    }
+                        .dorama-name {
+                            font-size: 2.4rem;
+                            pointer-events: auto;
+                        }
+                        .dorama-name:active + .dorama-desc{
+                            display: block; 
+                        }
+                        .dorama-desc {
+                            font-size: 1.4rem;
+                            display: none;
+                        }
+                        .bar {
+                            width: 50%;
+                            height: .3rem;
+                            border-radius: 10rem;
+                            text-align: center;
+                            background-color: var(--Branco);
+                        }
+                        .bar:active {
+                            background-color: red;
+                        }
+
+#l1c1 {
+    background-image: url(../assets/Images/doama1.webp);
+    background-size: cover;
+    background-position: center;
+} 
+#l1c2 {
+    background-image: url(../assets/Images/dorama2.webp);
+    background-size: cover;
+    background-position: center;
+}
+#l1c3 {
+    background-image: url(../assets/Images/dorama3.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#l2c1 {
+    background-image: url(../assets/Images/dorama4.webp);
+    background-size: cover;
+    background-position: center;
+}
+#l2c2 {
+    background-image: url(../assets/Images/dorama5.webp);
+    background-size: cover;
+    background-position: center;
+}
+#l2c3 {
+    background-image: url(../assets/Images/dorama6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#l3c1 {
+    background-image: url(../assets/Images/dorama7.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#l3c2 {
+    background-image: url(../assets/Images/dorama8.webp);
+    background-size: cover;
+    background-position: center;
+}
+#l3c3 {
+    background-image: url(../assets/Images/droama10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 600px)
+{
+    .card {
+        height: 16rem;
+    }
+    .dorama-name {
+        font-size: 0.8rem;
+    }
+    .dorama-desc {
+        font-size: 0.6rem;
+    }
+    .header {
+        background-position: center;
+     }
+    .logo  > img{
+        height: 1rem;
+    }
+    .searchbar {
+        height: 10%;
+        padding: 1rem;
+        font-size: .7rem;
+    }
+     #login-button {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+}
+
