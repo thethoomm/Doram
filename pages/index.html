@@ -11,7 +11,7 @@
     <title>Dorama</title>
 </head>
 <body>
-    <div class="container">
+    <section class="sect1">
         <header class="header">
             <nav class="navbar">
                 <div class="logo">
@@ -19,14 +19,14 @@
                 </div>
                 <input type="text" class="searchbar" id="searchbar" placeholder="Pesquisar">
                 <div class="login">
-                    <a href="./login.html" target="_self" id="login-button">Entrar</a>
+                    <a href="#signup" id="login-button">Entrar</a>
                 </div>
             </nav>
             <div class="headerimg"></div>
         </header>
         <main class="main">
             <div class="recommendation-area">
-                <span class="recommendation-text"></span>
+                <span class="recommendation-text">Recomendações</span>
                 <div class="videos-grid">
                     <div class="lines">
                         <div class="line line1">
@@ -88,6 +88,22 @@
                 </div>
             </div>
         </main>
-    </div>
+    </section>
+    <section class="sect2">
+        <div class="block">
+            <form class="form">
+                <h1 id="signup">Cadastre-se!</h1>
+                <div class="inputs">
+                    <input class="input" type="text" placeholder="Nome">
+                    <input class="input" type="text" placeholder="Exemplo@gmail.com">
+                    <input class="input" type="text" placeholder="Senha">
+                    <button id="btn">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="sect3">
+        <p><strong>Produzido por:</strong> Maria Rita Teodoro e Thomas Henrique de Souza Santos</p>
+    </section>
 </body>
 </html>
